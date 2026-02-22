@@ -5,21 +5,21 @@
 class Tfz < Formula
   desc "A small, fast TUI for running Terraform plan/apply with optional targets."
   homepage "https://github.com/inamuu/tfz"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inamuu/tfz/releases/download/v0.1.5/tfz_0.1.5_darwin_amd64.tar.gz"
-      sha256 "520e90576b44f173cb90ab50be8cd9283c0e22e0b04611cbfc32b222ae0f96ae"
+      url "https://github.com/inamuu/tfz/releases/download/v0.1.6/tfz_0.1.6_darwin_amd64.tar.gz"
+      sha256 "ccbcecd7d51cd0523ac29a2b30af56352191cd36e426b73b42b8e102ddb3622f"
 
       def install
         bin.install "tfz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inamuu/tfz/releases/download/v0.1.5/tfz_0.1.5_darwin_arm64.tar.gz"
-      sha256 "2ff64a7bcd6d81830a13152f8ac8c9a50ac8e219883c7dd8cbbab4313a704f42"
+      url "https://github.com/inamuu/tfz/releases/download/v0.1.6/tfz_0.1.6_darwin_arm64.tar.gz"
+      sha256 "dafc9444878e2a8018dde6738c4223a00ec8d86c86da4caa90867e50a6496405"
 
       def install
         bin.install "tfz"
@@ -29,15 +29,15 @@ class Tfz < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inamuu/tfz/releases/download/v0.1.5/tfz_0.1.5_linux_amd64.tar.gz"
-      sha256 "498a741240f64c6a182c7869caa06301e60a2bee2abd9ffa27b7a41d4c5b5827"
+      url "https://github.com/inamuu/tfz/releases/download/v0.1.6/tfz_0.1.6_linux_amd64.tar.gz"
+      sha256 "11fad63ea3ab6beafd66bff037c3e2802cac271cd646f0acb88f8b40fc555f00"
       def install
         bin.install "tfz"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inamuu/tfz/releases/download/v0.1.5/tfz_0.1.5_linux_arm64.tar.gz"
-      sha256 "3e180249325c69457f465250c4449f6b3e6ab915f3f538cab450d652ddebe576"
+      url "https://github.com/inamuu/tfz/releases/download/v0.1.6/tfz_0.1.6_linux_arm64.tar.gz"
+      sha256 "9f2e3c24dc3eb5bba61b77e2b6dfd3b1e45724ef3644a44bad083ca4bed12e02"
       def install
         bin.install "tfz"
       end
