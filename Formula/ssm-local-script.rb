@@ -5,20 +5,20 @@
 class SsmLocalScript < Formula
   desc "Run commands or local scripts on SSM-managed EC2 instances"
   homepage "https://github.com/inamuu/ssm-local-script"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.0/ssm-local-script_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0e1af0e2a1e9ca8e29a7df7947341245782e5b31ff3a5d3ca7105b91945575c3"
+      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.1/ssm-local-script_0.1.1_darwin_amd64.tar.gz"
+      sha256 "35ff26429d5e3b71f681496246eec55ca80dbfc830b9a9691c2086407cdf2268"
 
       define_method(:install) do
         bin.install "ssm-local-script"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.0/ssm-local-script_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a6dbd76e0aa769b2630511f20188205ca00f131e41b453e4dfc37c8142059ab0"
+      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.1/ssm-local-script_0.1.1_darwin_arm64.tar.gz"
+      sha256 "bf1c8541bc74a65a3eac6924fa77057d022cf87ff2035d9949c73ea155671eaf"
 
       define_method(:install) do
         bin.install "ssm-local-script"
@@ -28,15 +28,15 @@ class SsmLocalScript < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.0/ssm-local-script_0.1.0_linux_amd64.tar.gz"
-      sha256 "1fde4d62f5d6eaaa92fe7c8a1562c6ff8fbdc6b691425896b09d86f7435d8738"
+      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.1/ssm-local-script_0.1.1_linux_amd64.tar.gz"
+      sha256 "7bf091d8f056bdb92c4a31b21681ad27d022e269809cf56c0b085cdb737a6c88"
       define_method(:install) do
         bin.install "ssm-local-script"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.0/ssm-local-script_0.1.0_linux_arm64.tar.gz"
-      sha256 "ce3956fdb02cc71e94ef47cca60c299cdbc7d614a8b903aeca50014254b044fd"
+      url "https://github.com/inamuu/ssm-local-script/releases/download/v0.1.1/ssm-local-script_0.1.1_linux_arm64.tar.gz"
+      sha256 "6792b254ecd39dc5d9ece8b902c41c7098cdeba8ec839bd4b6874947cc9f6ed7"
       define_method(:install) do
         bin.install "ssm-local-script"
       end
