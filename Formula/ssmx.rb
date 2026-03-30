@@ -5,20 +5,20 @@
 class Ssmx < Formula
   desc "AWS SSM Session Manager CLI with configurable keepalive"
   homepage "https://github.com/inamuu/ssmx"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inamuu/ssmx/releases/download/v0.1.6/ssmx_0.1.6_darwin_amd64.tar.gz"
-      sha256 "368b1a9eb150c2e41e978c7795a97a8664261fc56eaaa649f7b94fa3835d126d"
+      url "https://github.com/inamuu/ssmx/releases/download/v0.1.7/ssmx_0.1.7_darwin_amd64.tar.gz"
+      sha256 "7e673501c93ff065038ced11f1cadaa5b5624181eb3815042940aec8dcd697ce"
 
       define_method(:install) do
         bin.install "ssmx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inamuu/ssmx/releases/download/v0.1.6/ssmx_0.1.6_darwin_arm64.tar.gz"
-      sha256 "12785693f4dd2f461562eed0cdf3e01e2660214a6af80b5dd1f6a370e178ad85"
+      url "https://github.com/inamuu/ssmx/releases/download/v0.1.7/ssmx_0.1.7_darwin_arm64.tar.gz"
+      sha256 "eeeb30c6159019ba88180967885f4631c515b6cbc9c1b120bfa40e4105f7a4c9"
 
       define_method(:install) do
         bin.install "ssmx"
@@ -28,15 +28,15 @@ class Ssmx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inamuu/ssmx/releases/download/v0.1.6/ssmx_0.1.6_linux_amd64.tar.gz"
-      sha256 "e02da2c844053cd65a9f120f764a7a37bcc5a5790be8cba5fd901c043107bff0"
+      url "https://github.com/inamuu/ssmx/releases/download/v0.1.7/ssmx_0.1.7_linux_amd64.tar.gz"
+      sha256 "c3ce06637a5b190deeea50adccc27ce1a2378c261cb8108de783cdfe60340464"
       define_method(:install) do
         bin.install "ssmx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inamuu/ssmx/releases/download/v0.1.6/ssmx_0.1.6_linux_arm64.tar.gz"
-      sha256 "e57a166c1196ac163a17fbb6eff25fd24ac62b7f9942be26b7d7771fd93cf1e2"
+      url "https://github.com/inamuu/ssmx/releases/download/v0.1.7/ssmx_0.1.7_linux_arm64.tar.gz"
+      sha256 "625c37c5877468731d1201b77659106d6543fd1dd5fcfe326f62e59501898104"
       define_method(:install) do
         bin.install "ssmx"
       end
